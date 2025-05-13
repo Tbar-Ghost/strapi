@@ -4,11 +4,17 @@ module.exports = ({ env }) => ({
     config: {
       endpoint: '/graphql',
       shadowCRUD: true,
-      playgroundAlways: true,      // เปิด Playground เสมอ
-      landingPage: true,           // ป้องกัน error deprecated
+      playgroundAlways: true,
+      landingPage: true,
       depthLimit: 7,
       amountLimit: 100,
-      introspection: true,         // 🔥 บังคับเปิด introspection
+      introspection: true, // ยังต้องใส่
+      apolloServer: {
+        introspection: true,        // 👈 สำคัญสุด
+        playground: true,
+      },
     },
   },
 });
+
+console.log('NODE_ENV', process.env.NODE_ENV);
