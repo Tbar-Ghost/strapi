@@ -18,11 +18,11 @@ module.exports = ({ env }) => ({
     config: {
       endpoint: '/graphql',
       shadowCRUD: true,
-      playgroundAlways: env('GRAPHQL_PLAYGROUND', true),
+      playgroundAlways: true,
       landingPage: true,
       depthLimit: 7,
       amountLimit: 100,
-      introspection: env('GRAPHQL_INTROSPECTION', true), // 👈 ใช้ค่าจาก .env
+      introspection: true, // 👈 ใช้ค่าจาก .env
     },
   },
 });
