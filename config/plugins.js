@@ -4,11 +4,11 @@ module.exports = ({ env }) => ({
     config: {
       endpoint: '/graphql',
       shadowCRUD: true,
-      playgroundAlways: true, // หรือ false ถ้าไม่ต้องการใน prod
-      landingPage: true,
+      playgroundAlways: true,      // เปิด Playground เสมอ
+      landingPage: true,           // ป้องกัน error deprecated
       depthLimit: 7,
       amountLimit: 100,
-      introspection: true, // 🔥 บังคับเปิด introspection
+      introspection: true,         // 🔥 บังคับเปิด introspection
     },
   },
 });
