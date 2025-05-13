@@ -1,29 +1,14 @@
 module.exports = ({ env }) => ({
-  'users-permissions': {
-    config: {
-      jwtSecret: env('JWT_SECRET'),
-    },
-  },
-  upload: {
-    config: {
-      provider: 'local',
-      actionOptions: {
-        upload: {},
-        delete: {},
-      },
-    },
-  },
   graphql: {
     enabled: true,
     config: {
       endpoint: '/graphql',
       shadowCRUD: true,
-      // playgroundAlways: true,
+      playgroundAlways: true, // หรือ false ถ้าไม่ต้องการใน prod
       landingPage: true,
       depthLimit: 7,
       amountLimit: 100,
-      introspection: true, // 👈 ใช้ค่าจาก .env
+      introspection: true, // 🔥 บังคับเปิด introspection
     },
   },
 });
-
