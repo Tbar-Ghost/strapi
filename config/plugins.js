@@ -1,4 +1,4 @@
-export default ({ env }) => ({
+module.exports = ({ env }) => ({
   'users-permissions': {
     config: {
       jwtSecret: env('JWT_SECRET'),
@@ -21,9 +21,7 @@ export default ({ env }) => ({
       playgroundAlways: true,
       depthLimit: 7,
       amountLimit: 100,
-      introspection: true,
+      introspection: true, // สำคัญ!
     },
   },
 });
-
-
