@@ -28,8 +28,8 @@ module.exports = ({ env }) => ({
         },
       },
       settings: {
-        defaultFrom: 'tanut.stamp@gmail.com',
-        defaultReplyTo: 'tanut.stamp@gmail.com',
+        defaultFrom: 'stampstrk@gmail.com',
+        defaultReplyTo: 'stampstrk@gmail.com',
       },
     },
   },
