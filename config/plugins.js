@@ -48,7 +48,7 @@ module.exports = ({ env }) => ({
   // },
   upload: {
     config: {
-      provider: '@strapi/provider-upload-aws-s3',
+      provider: 'aws-s3',
       providerOptions: {
         accessKeyId: env('AWS_ACCESS_KEY_ID'),
         secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
