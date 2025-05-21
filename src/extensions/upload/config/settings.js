@@ -5,7 +5,7 @@ module.exports = {
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     region: process.env.AWS_REGION,
     params: {
-      Bucket: process.env.AWS_BUCKET,
+      Bucket: process.env.AWS_BUCKET
     },
   },
 };
