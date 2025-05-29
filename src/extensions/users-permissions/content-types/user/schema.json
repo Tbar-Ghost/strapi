@@ -81,6 +81,12 @@
       "relation": "oneToMany",
       "target": "api::feature.feature",
       "mappedBy": "user"
+    },
+    "swiperseos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::swiperseo.swiperseo",
+      "mappedBy": "user"
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "swiperseos",
+  "info": {
+    "singularName": "swiperseo",
+    "pluralName": "swiperseos",
+    "displayName": "Swiperseo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "heading": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "swiperseos"
+    }
+  }
+}
