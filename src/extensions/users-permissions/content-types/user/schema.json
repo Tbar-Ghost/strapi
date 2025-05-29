@@ -87,6 +87,30 @@
       "relation": "oneToMany",
       "target": "api::swiperseo.swiperseo",
       "mappedBy": "user"
+    },
+    "ourblogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ourblog.ourblog",
+      "mappedBy": "user"
+    },
+    "ourfeatures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ourfeature.ourfeature",
+      "mappedBy": "user"
+    },
+    "scores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::score.score",
+      "mappedBy": "user"
+    },
+    "pricings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing.pricing",
+      "mappedBy": "user"
     }
   }
 }
