@@ -1,0 +1,53 @@
+[33mc0c2aab[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m add fill
+[33m170fc61[m push other fill2
+[33m9d2fe44[m push other fill
+[33m3d9bc56[m push befor pull
+[33m17ebd07[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m add pool and timeout in database
+[33mf6e3652[m new plan free in railway
+[33mc3acb05[m add relation in user to theme
+[33mcad2c34[m add component theme
+[33m4809daa[m add feature theme
+[33mf2fd0d5[m edit imgUser to files
+[33m7974e45[m edit imgUser to single media
+[33m604e6d5[m add imgUser is User
+[33m994087b[m add ACL private in plugin
+[33mcdda3d5[m edit S3 .env add editinstrapi9
+[33mb86d704[m edit S3 .env add editinstrapi8
+[33m9eb63ad[m edit S3 .env add editinstrapi8
+[33mbded0da[m edit S3 .env add editinstrapi5
+[33m90e15af[m edit S3 .env add editinstrapi4
+[33m06e18fb[m edit S3 .env add editinstrapi3
+[33mcd99d7f[m edit S3 .env add editinstrapi2
+[33m4dd0a0b[m edit S3 .env add editinstrapi
+[33mc2e9589[m add S3 .env
+[33m9cc88fb[m add S3
+[33m1a6c2c3[m add strapi-server.js
+[33mfd75889[m add URL edit
+[33mf71394c[m add URL env edit
+[33m82c4e5f[m add URL env
+[33m4c98e36[m add link tem email
+[33mc599771[m passgmail in env for mail
+[33mc717bc9[m add env for mail
+[33ma2419e5[m add mail default
+[33m1cb54c7[m fix error add nodemail
+[33mbc1fae7[m fix error all
+[33m8294ac8[m fix error email install legacy-peer-deps
+[33mf270446[m fix error email uninstall
+[33m7a3d5ca[m fix error email installplugins
+[33m39aefe1[m fix error by del email
+[33m693ae7e[m add-email in plugins
+[33m6eb96c5[m fix: force introspection enabled in apolloServer
+[33m333cfb9[m fix: enable graphql introspection
+[33mea363b0[m fix: force enable graphql introspection
+[33ma18c2b2[m edit landingPage
+[33m2286283[m edit config
+[33mb112fd0[m add landingPage=true in plugin
+[33m1630c99[m addkeyinenv
+[33m5c54ea5[m edit plugins only graphql
+[33mcbf4357[m Add .env for deployment
+[33m84da069[m add-env-editplugins
+[33m4cfdcf4[m edit-config-fix-error
+[33m89857a8[m edit-config
+[33m23a8cf7[m upgraphql-config-add-introspection
+[33m4e8138b[m upgraphql
+[33mdacd232[m Initial commit

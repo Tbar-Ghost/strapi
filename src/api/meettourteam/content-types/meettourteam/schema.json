@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meettourteams",
+  "info": {
+    "singularName": "meettourteam",
+    "pluralName": "meettourteams",
+    "displayName": "Meettourteam"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rolejob": {
+      "type": "string"
+    },
+    "iconone": {
+      "type": "string"
+    },
+    "icontwo": {
+      "type": "string"
+    },
+    "iconthree": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

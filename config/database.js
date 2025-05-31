@@ -6,12 +6,7 @@ module.exports = ({ env }) => ({
         },
         debug: true,
         pool: { min: 0, max: 7 },
-    },
-    pool: {
-        min: 0,
-        max: 5,
-    },
-    acquireConnectionTimeout: 10000,
+    }
 });
 
 // module.exports = ({ env }) => ({
