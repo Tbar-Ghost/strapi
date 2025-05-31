@@ -467,6 +467,10 @@ export interface ApiMeettourteamMeettourteam
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    user: Schema.Attribute.Relation<
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
   };
 }
 
@@ -680,6 +684,10 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    user: Schema.Attribute.Relation<
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
   };
 }
 
@@ -1159,6 +1167,10 @@ export interface PluginUsersPermissionsUser
       'plugin::users-permissions.user'
     > &
       Schema.Attribute.Private;
+    meettourteams: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::meettourteam.meettourteam'
+    >;
     ourblogs: Schema.Attribute.Relation<'oneToMany', 'api::ourblog.ourblog'>;
     ourfeatures: Schema.Attribute.Relation<
       'oneToMany',
@@ -1181,6 +1193,10 @@ export interface PluginUsersPermissionsUser
     swiperseos: Schema.Attribute.Relation<
       'oneToMany',
       'api::swiperseo.swiperseo'
+    >;
+    testimonials: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -111,6 +111,18 @@
       "relation": "oneToMany",
       "target": "api::pricing.pricing",
       "mappedBy": "user"
+    },
+    "meettourteams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::meettourteam.meettourteam",
+      "mappedBy": "user"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "user"
     }
   }
 }
