@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_seo_iconseos",
+  "info": {
+    "displayName": "iconseo"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "textcolor": {
+      "type": "string"
+    }
+  }
+}

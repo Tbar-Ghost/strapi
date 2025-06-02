@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_iconseo_section_iconseos",
+  "info": {
+    "displayName": "Iconseo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionIconseo": {
+      "type": "json"
+    },
+    "styleItemsIconseo": {
+      "type": "json"
+    },
+    "cardItemIconseo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "iconseo-section.iconseo-item"
+    },
+    "sectionNameIconseo": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayIconseo"
+      ],
+      "default": "ArrayIconseo"
+    }
+  }
+}

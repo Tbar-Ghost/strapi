@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_ourteam_section_ourteam_items",
+  "info": {
+    "displayName": "OurteamItem"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rolejob": {
+      "type": "string"
+    },
+    "iconone": {
+      "type": "string"
+    },
+    "icontwo": {
+      "type": "string"
+    },
+    "iconthree": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_score_section_score_items",
+  "info": {
+    "displayName": "ScoreItem"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

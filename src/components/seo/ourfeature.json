@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_seo_ourfeatures",
+  "info": {
+    "displayName": "Ourfeature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "contenttextcolor": {
+      "type": "string"
+    },
+    "titlecolor": {
+      "type": "string"
+    },
+    "bgtitlecolor": {
+      "type": "string"
+    },
+    "bgcontentcolor": {
+      "type": "string"
+    }
+  }
+}

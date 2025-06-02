@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_profiles",
+  "info": {
+    "singularName": "web-profile",
+    "pluralName": "web-profiles",
+    "displayName": "Web Profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "seo.testimonial",
+        "seo.slideheader",
+        "seo.score",
+        "seo.pricing",
+        "seo.ourfeature",
+        "seo.ourblog",
+        "seo.meettourteam",
+        "seo.iconseo",
+        "hero-section.carousel",
+        "testimonial-section.testimonial",
+        "testimonial-section.testimonial-item",
+        "score-section.score",
+        "score-section.score-item",
+        "pricing-section.pricing",
+        "pricing-section.pricing-item",
+        "ourteam-section.ourteam-item",
+        "ourteam-section.meetourteam",
+        "ourfeature-section.features",
+        "ourfeature-section.feature-item",
+        "ourblog.blog",
+        "ourblog.blog-item",
+        "iconseo-section.iconseo",
+        "iconseo-section.iconseo-item"
+      ]
+    }
+  }
+}

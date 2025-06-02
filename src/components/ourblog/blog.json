@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ourblog_blogs",
+  "info": {
+    "displayName": "blog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionblog": {
+      "type": "json"
+    },
+    "styleItemsblog": {
+      "type": "json"
+    },
+    "cardItemBlog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ourblog.blog-item"
+    },
+    "sectionNameBlog": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayBlog"
+      ],
+      "default": "ArrayBlog"
+    }
+  }
+}

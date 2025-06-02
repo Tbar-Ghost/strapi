@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_hero_section_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSection": {
+      "type": "json"
+    },
+    "styleCarousel": {
+      "type": "json"
+    },
+    "styleItems": {
+      "type": "json"
+    },
+    "cardItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hero-section.carousel-item"
+    },
+    "sectionName": {
+      "type": "enumeration",
+      "enum": [
+        "HeroSection"
+      ],
+      "default": "HeroSection"
+    }
+  }
+}

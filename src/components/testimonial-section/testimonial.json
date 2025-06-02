@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_testimonial_section_testimonials",
+  "info": {
+    "displayName": "Testimonial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectiontestimonial": {
+      "type": "json"
+    },
+    "styleItemstestimonial": {
+      "type": "json"
+    },
+    "cardItemTestmonial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonial-section.testimonial-item"
+    },
+    "sectionNameTestimonial": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayTestimonial"
+      ]
+    }
+  }
+}

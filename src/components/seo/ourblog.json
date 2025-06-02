@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_seo_ourblogs",
+  "info": {
+    "displayName": "Ourblog"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "bgcolorblock": {
+      "type": "string"
+    },
+    "textcolortitle": {
+      "type": "string"
+    },
+    "textcolordate": {
+      "type": "string"
+    },
+    "textcolordescription": {
+      "type": "string"
+    }
+  }
+}

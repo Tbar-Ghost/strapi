@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ourteam_section_meetourteams",
+  "info": {
+    "displayName": "Meetourteam",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionourteam": {
+      "type": "json"
+    },
+    "styleItemsourteam": {
+      "type": "json"
+    },
+    "cardItemOurteam": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ourteam-section.ourteam-item"
+    },
+    "sectionNameMeetourteam": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayMeetourteam"
+      ],
+      "default": "ArrayMeetourteam"
+    }
+  }
+}

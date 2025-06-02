@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_seo_slideheaders",
+  "info": {
+    "displayName": "slideheader"
+  },
+  "options": {},
+  "attributes": {
+    "headingone": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "headingtwo": {
+      "type": "string"
+    },
+    "buttontext": {
+      "type": "string"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "textcolorheadingone": {
+      "type": "string"
+    },
+    "textcolorheadingtwo": {
+      "type": "string"
+    },
+    "textcolorbutton": {
+      "type": "string"
+    }
+  }
+}

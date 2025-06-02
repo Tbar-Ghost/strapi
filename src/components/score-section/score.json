@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_score_section_scores",
+  "info": {
+    "displayName": "Score",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionscore": {
+      "type": "json"
+    },
+    "styleItemscore": {
+      "type": "json"
+    },
+    "cardItemScore": {
+      "type": "component",
+      "repeatable": true,
+      "component": "score-section.score-item"
+    },
+    "sectionNameScore": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayScore"
+      ]
+    }
+  }
+}

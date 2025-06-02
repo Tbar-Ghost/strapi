@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_seo_testimonials",
+  "info": {
+    "displayName": "testimonial"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rolejobuser": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "textcolorname": {
+      "type": "string"
+    },
+    "textcolorjobuser": {
+      "type": "string"
+    },
+    "textcolor": {
+      "type": "string"
+    },
+    "bgcolor": {
+      "type": "string"
+    }
+  }
+}

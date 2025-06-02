@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_seo_pricings",
+  "info": {
+    "displayName": "pricing"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "features": {
+      "type": "json"
+    },
+    "textbutton": {
+      "type": "string"
+    },
+    "colorbutton": {
+      "type": "string"
+    },
+    "bgcolor": {
+      "type": "string"
+    },
+    "textcolorfeatures": {
+      "type": "string"
+    },
+    "textcolorprice": {
+      "type": "string"
+    },
+    "textcolortitle": {
+      "type": "string"
+    },
+    "textcolorbutton": {
+      "type": "string"
+    }
+  }
+}

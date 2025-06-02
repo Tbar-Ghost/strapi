@@ -691,6 +691,65 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiWebProfileWebProfile extends Struct.CollectionTypeSchema {
+  collectionName: 'web_profiles';
+  info: {
+    description: '';
+    displayName: 'Web Profile';
+    pluralName: 'web-profiles';
+    singularName: 'web-profile';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Schema.Attribute.DynamicZone<
+      [
+        'seo.testimonial',
+        'seo.slideheader',
+        'seo.score',
+        'seo.pricing',
+        'seo.ourfeature',
+        'seo.ourblog',
+        'seo.meettourteam',
+        'seo.iconseo',
+        'hero-section.carousel',
+        'testimonial-section.testimonial',
+        'testimonial-section.testimonial-item',
+        'score-section.score',
+        'score-section.score-item',
+        'pricing-section.pricing',
+        'pricing-section.pricing-item',
+        'ourteam-section.ourteam-item',
+        'ourteam-section.meetourteam',
+        'ourfeature-section.features',
+        'ourfeature-section.feature-item',
+        'ourblog.blog',
+        'ourblog.blog-item',
+        'iconseo-section.iconseo',
+        'iconseo-section.iconseo-item',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::web-profile.web-profile'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    users_permissions_user: Schema.Attribute.Relation<
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1229,6 +1288,7 @@ declare module '@strapi/strapi' {
       'api::score.score': ApiScoreScore;
       'api::swiperseo.swiperseo': ApiSwiperseoSwiperseo;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::web-profile.web-profile': ApiWebProfileWebProfile;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

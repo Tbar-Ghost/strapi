@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_seo_meettourteams",
+  "info": {
+    "displayName": "Meettourteam"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rolejob": {
+      "type": "string"
+    },
+    "iconone": {
+      "type": "string"
+    },
+    "icontwo": {
+      "type": "string"
+    },
+    "iconthree": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "textcolorname": {
+      "type": "string"
+    },
+    "textcolorrolejob": {
+      "type": "string"
+    },
+    "hoverimagecolor": {
+      "type": "string"
+    }
+  }
+}

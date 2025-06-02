@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ourfeature_section_features",
+  "info": {
+    "displayName": "features",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionfeatures": {
+      "type": "json"
+    },
+    "styleItemsfeatures": {
+      "type": "json"
+    },
+    "cardItemFeature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ourfeature-section.feature-item"
+    },
+    "sectionNameFeatures": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayFeatures"
+      ],
+      "default": "ArrayFeatures"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_pricing_section_pricings",
+  "info": {
+    "displayName": "Pricing",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionpricing": {
+      "type": "json"
+    },
+    "styleItemspricing": {
+      "type": "json"
+    },
+    "cardItemPricing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing-section.pricing-item"
+    },
+    "sectionNamePricing": {
+      "type": "enumeration",
+      "enum": [
+        "ArrayPricing"
+      ],
+      "default": "ArrayPricing"
+    }
+  }
+}

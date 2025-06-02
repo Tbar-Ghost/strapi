@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pricing_section_pricing_items",
+  "info": {
+    "displayName": "PricingItem"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "itemfeature": {
+      "type": "json"
+    }
+  }
+}
