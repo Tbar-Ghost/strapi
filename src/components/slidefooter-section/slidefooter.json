@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_slidefooter_section_slidefooters",
+  "info": {
+    "displayName": "Slidefooter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionSlidefooter": {
+      "type": "json"
+    },
+    "styleItemsSlidefooter": {
+      "type": "json"
+    },
+    "cardItemSlidefooter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slidefooter-section.slidefooter-item"
+    }
+  }
+}

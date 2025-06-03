@@ -1,5 +1,44 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface FooterSectionFooter extends Struct.ComponentSchema {
+  collectionName: 'components_footer_section_footers';
+  info: {
+    description: '';
+    displayName: 'Footer';
+  };
+  attributes: {
+    cardItemFooterItems: Schema.Attribute.Component<
+      'footer-section.footer-items',
+      true
+    >;
+    styleItemsFooter: Schema.Attribute.JSON;
+    styleSectionFooter: Schema.Attribute.JSON;
+  };
+}
+
+export interface FooterSectionFooterItems extends Struct.ComponentSchema {
+  collectionName: 'components_footer_section_footer_items';
+  info: {
+    description: '';
+    displayName: 'FooterItems';
+  };
+  attributes: {
+    MenuItems: Schema.Attribute.Component<'footer-section.footer-menu', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterSectionFooterMenu extends Struct.ComponentSchema {
+  collectionName: 'components_footer_section_footer_menus';
+  info: {
+    displayName: 'FooterMenu';
+  };
+  attributes: {
+    icon: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface HeroSectionCarousel extends Struct.ComponentSchema {
   collectionName: 'components_hero_section_carousels';
   info: {
@@ -62,6 +101,65 @@ export interface IconseoSectionIconseoItem extends Struct.ComponentSchema {
     desc: Schema.Attribute.String;
     icon: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface NavbarSectionNarbarSubMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navbar_section_narbar_sub_menus';
+  info: {
+    description: '';
+    displayName: 'NarbarSubMenu';
+  };
+  attributes: {
+    link: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface NavbarSectionNavbar extends Struct.ComponentSchema {
+  collectionName: 'components_navbar_section_navbars';
+  info: {
+    description: '';
+    displayName: 'Navbar';
+  };
+  attributes: {
+    cardItemNavbar: Schema.Attribute.Component<
+      'navbar-section.navbar-item',
+      true
+    >;
+    styleItemNavbar: Schema.Attribute.JSON;
+    styleSectionNavbar: Schema.Attribute.JSON;
+  };
+}
+
+export interface NavbarSectionNavbarItem extends Struct.ComponentSchema {
+  collectionName: 'components_navbar_section_navbar_items';
+  info: {
+    description: '';
+    displayName: 'NavbarItem';
+  };
+  attributes: {
+    hover_state_key: Schema.Attribute.String;
+    MenuItems: Schema.Attribute.Component<
+      'navbar-section.navbar-mega-menu',
+      true
+    >;
+    order: Schema.Attribute.Integer;
+    title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['megaMenu', 'submenu', 'link']>;
+  };
+}
+
+export interface NavbarSectionNavbarMegaMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navbar_section_navbar_mega_menus';
+  info: {
+    description: '';
+    displayName: 'NavbarMegaMenu';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    SubMenu: Schema.Attribute.Component<'navbar-section.narbar-sub-menu', true>;
   };
 }
 
@@ -367,6 +465,36 @@ export interface SeoTestimonial extends Struct.ComponentSchema {
   };
 }
 
+export interface SlidefooterSectionSlidefooter extends Struct.ComponentSchema {
+  collectionName: 'components_slidefooter_section_slidefooters';
+  info: {
+    description: '';
+    displayName: 'Slidefooter';
+  };
+  attributes: {
+    cardItemSlidefooter: Schema.Attribute.Component<
+      'slidefooter-section.slidefooter-item',
+      true
+    >;
+    styleItemsSlidefooter: Schema.Attribute.JSON;
+    styleSectionSlidefooter: Schema.Attribute.JSON;
+  };
+}
+
+export interface SlidefooterSectionSlidefooterItem
+  extends Struct.ComponentSchema {
+  collectionName: 'components_slidefooter_section_slidefooter_items';
+  info: {
+    displayName: 'SlidefooterItem';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
 export interface TestimonialSectionTestimonial extends Struct.ComponentSchema {
   collectionName: 'components_testimonial_section_testimonials';
   info: {
@@ -408,10 +536,17 @@ export interface TestimonialSectionTestimonialItem
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'footer-section.footer': FooterSectionFooter;
+      'footer-section.footer-items': FooterSectionFooterItems;
+      'footer-section.footer-menu': FooterSectionFooterMenu;
       'hero-section.carousel': HeroSectionCarousel;
       'hero-section.carousel-item': HeroSectionCarouselItem;
       'iconseo-section.iconseo': IconseoSectionIconseo;
       'iconseo-section.iconseo-item': IconseoSectionIconseoItem;
+      'navbar-section.narbar-sub-menu': NavbarSectionNarbarSubMenu;
+      'navbar-section.navbar': NavbarSectionNavbar;
+      'navbar-section.navbar-item': NavbarSectionNavbarItem;
+      'navbar-section.navbar-mega-menu': NavbarSectionNavbarMegaMenu;
       'ourblog.blog': OurblogBlog;
       'ourblog.blog-item': OurblogBlogItem;
       'ourfeature-section.feature-item': OurfeatureSectionFeatureItem;
@@ -430,6 +565,8 @@ declare module '@strapi/strapi' {
       'seo.score': SeoScore;
       'seo.slideheader': SeoSlideheader;
       'seo.testimonial': SeoTestimonial;
+      'slidefooter-section.slidefooter': SlidefooterSectionSlidefooter;
+      'slidefooter-section.slidefooter-item': SlidefooterSectionSlidefooterItem;
       'testimonial-section.testimonial': TestimonialSectionTestimonial;
       'testimonial-section.testimonial-item': TestimonialSectionTestimonialItem;
     }

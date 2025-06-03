@@ -728,6 +728,15 @@ export interface ApiWebProfileWebProfile extends Struct.CollectionTypeSchema {
         'ourblog.blog-item',
         'iconseo-section.iconseo',
         'iconseo-section.iconseo-item',
+        'slidefooter-section.slidefooter',
+        'slidefooter-section.slidefooter-item',
+        'navbar-section.navbar',
+        'navbar-section.navbar-mega-menu',
+        'navbar-section.navbar-item',
+        'navbar-section.narbar-sub-menu',
+        'footer-section.footer',
+        'footer-section.footer-menu',
+        'footer-section.footer-items',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

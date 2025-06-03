@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_navbar_section_navbar_items",
+  "info": {
+    "displayName": "NavbarItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "megaMenu",
+        "submenu",
+        "link"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "hover_state_key": {
+      "type": "string"
+    },
+    "MenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navbar-section.navbar-mega-menu"
+    }
+  }
+}

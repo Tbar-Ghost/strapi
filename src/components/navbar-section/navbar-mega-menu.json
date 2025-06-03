@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_navbar_section_navbar_mega_menus",
+  "info": {
+    "displayName": "NavbarMegaMenu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "SubMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navbar-section.narbar-sub-menu"
+    }
+  }
+}

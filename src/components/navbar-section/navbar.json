@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_navbar_section_navbars",
+  "info": {
+    "displayName": "Navbar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "styleSectionNavbar": {
+      "type": "json"
+    },
+    "styleItemNavbar": {
+      "type": "json"
+    },
+    "cardItemNavbar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navbar-section.navbar-item"
+    }
+  }
+}

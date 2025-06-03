@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_slidefooter_section_slidefooter_items",
+  "info": {
+    "displayName": "SlidefooterItem"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
