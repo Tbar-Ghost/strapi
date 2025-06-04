@@ -55,7 +55,7 @@ module.exports = ({ env }) => ({
         region: process.env.AWS_REGION,
         params: {
           Bucket: process.env.AWS_BUCKET,
-          ACL: 'private',
+          ACL: 'private'
         },
       },
     },
