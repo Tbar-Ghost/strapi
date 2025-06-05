@@ -33,18 +33,34 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  upload: {
+  // upload: {
+  //   config: {
+  //     provider: 'aws-s3',
+  //     providerOptions: {
+  //       s3Options: {
+  //         region: env('AWS_REGION'),
+  //         endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ สำคัญ!
+  //         credentials: {
+  //           accessKeyId: env('AWS_ACCESS_KEY_ID'),
+  //           secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
+  //         },
+  //       },
+  //       params: {
+  //         Bucket: env('AWS_BUCKET'),
+  //       },
+  //     },
+  //   },
+  // },
+    upload: {
     config: {
       provider: 'aws-s3',
       providerOptions: {
-        s3Options: {
-          region: env('AWS_REGION'),
-          endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ สำคัญ!
-          credentials: {
-            accessKeyId: env('AWS_ACCESS_KEY_ID'),
-            secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
-          },
+        credentials: {
+          accessKeyId: env('AWS_ACCESS_KEY_ID'),
+          secretAccessKey: env('AWS_ACCESS_SECRET'),
         },
+        region: env('AWS_REGION'), // เช่น 'us-east-1', 'ap-southeast-1'
+        endpoint: env('AWS_S3_ENDPOINT'), // เช่น 'https://s3.us-east-1.amazonaws.com'
         params: {
           Bucket: env('AWS_BUCKET'),
         },
@@ -89,4 +105,5 @@ module.exports = ({ env }) => ({
     console.log('AWS_ACCESS_KEY_ID', process.env.AWS_ACCESS_KEY_ID);
     console.log('AWS_SECRET_ACCESS_KEY', process.env.AWS_SECRET_ACCESS_KEY);
     console.log('AWS_BUCKET', process.env.AWS_BUCKET);
+    console.log('AWS_S3_ENDPOINT', process.env.AWS_S3_ENDPOINT);
 
