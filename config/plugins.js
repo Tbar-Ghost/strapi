@@ -35,18 +35,17 @@ module.exports = ({ env }) => ({
   },
   upload: {
     config: {
+      provider: 'aws-s3',
       providerOptions: {
         s3Options: {
           credentials: {
-            accessKeyId: AWS_ACCESS_KEY_ID,
-            secretAccessKey: AWS_SECRET_ACCESS_KEY,
+            accessKeyId: env('AWS_ACCESS_KEY_ID'),
+            secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
           },
-          region: AWS_REGION,
-          // endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`,
-          forcePathStyle: false, // optional
+          region: env('AWS_REGION'),
         },
         params: {
-          Bucket: AWS_BUCKET,
+          Bucket: env('AWS_BUCKET'),
         },
       },
     },
