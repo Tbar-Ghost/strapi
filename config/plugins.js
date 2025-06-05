@@ -53,7 +53,7 @@ module.exports = ({ env }) => ({
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
         region: process.env.AWS_REGION,
-        endpoint: `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
+        endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`,
         params: {
           Bucket: process.env.AWS_BUCKET,
         },
