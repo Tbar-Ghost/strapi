@@ -63,6 +63,7 @@ module.exports = ({ env }) => ({
       },
       params: {
         Bucket: env('AWS_BUCKET'),
+        ACL: 'public-read', // ✅ เพิ่มบรรทัดนี้
       },
     },
   },
