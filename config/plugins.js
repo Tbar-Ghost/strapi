@@ -33,33 +33,33 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // upload: {
-  //   config: {
-  //     provider: '@strapi/provider-upload-aws-s3',
-  //     providerOptions: {
-  //       accessKeyId: env('AWS_ACCESS_KEY_ID'),
-  //       secretAccessKey: env('AWS_ACCESS_SECRET'),
-  //       region: env('AWS_REGION'),
-  //       params: {
-  //         Bucket: env('AWS_BUCKET'),
-  //       },
-  //     },
-  //   },
-  // },
   upload: {
     config: {
-      provider: 'aws-s3',
+      provider: '@strapi/provider-upload-aws-s3',
       providerOptions: {
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-        region: process.env.AWS_REGION,
-        endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`,
+        accessKeyId: env('AWS_ACCESS_KEY_ID'),
+        secretAccessKey: env('AWS_ACCESS_SECRET'),
+        region: env('AWS_REGION'),
         params: {
-          Bucket: process.env.AWS_BUCKET,
+          Bucket: env('AWS_BUCKET'),
         },
       },
     },
   },
+  // upload: {
+  //   config: {
+  //     provider: 'aws-s3',
+  //     providerOptions: {
+  //       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  //       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  //       region: process.env.AWS_REGION,
+  //       endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`,
+  //       params: {
+  //         Bucket: process.env.AWS_BUCKET,
+  //       },
+  //     },
+  //   },
+  // },
   'content-type-builder': {
     enabled: true
   }
