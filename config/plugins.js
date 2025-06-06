@@ -51,7 +51,8 @@ module.exports = ({ env }) => ({
   //     },
   //   },
   // },
-  upload: {
+upload: {
+  config: {
     provider: 'aws-s3',
     providerOptions: {
       s3Options: {
@@ -63,10 +64,12 @@ module.exports = ({ env }) => ({
       },
       params: {
         Bucket: env('AWS_BUCKET'),
-        ACL: 'public-read', // ✅ เพิ่มบรรทัดนี้
+        ACL: 'public-read',
       },
     },
   },
+},
+
   // upload: {
   //   config: {
   //     provider: '@strapi/provider-upload-aws-s3',
