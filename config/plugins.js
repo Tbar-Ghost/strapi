@@ -66,6 +66,7 @@ upload: {
         Bucket: env('AWS_BUCKET'),
         ACL: 'public-read',
       },
+      baseUrl: env('AWS_S3_ENDPOINT'),
     },
   },
 },
