@@ -66,10 +66,11 @@ upload: {
         Bucket: env('AWS_BUCKET'),
         ACL: 'public-read',
       },
-      baseUrl: env('AWS_S3_ENDPOINT'),
+      baseUrl: `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
     },
   },
 },
+
 
   // upload: {
   //   config: {
