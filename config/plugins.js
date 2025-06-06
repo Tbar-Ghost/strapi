@@ -61,8 +61,8 @@ upload: {
           secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
         },
         region: env('AWS_REGION'),
-        endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ ตรง region
-        forcePathStyle: false,
+        endpoint: `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ ใส่ชื่อ bucket ไว้ที่ subdomain
+        forcePathStyle: false, // ✅ ต้อง false สำหรับ virtual-hosted style
       },
       params: {
         Bucket: env('AWS_BUCKET'),
