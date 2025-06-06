@@ -51,23 +51,39 @@ module.exports = ({ env }) => ({
   //     },
   //   },
   // },
+
+  
+// upload: {
+//   config: {
+//     provider: '@strapi/provider-upload-aws-s3',
+//     providerOptions: {
+//       credentials: {
+//         accessKeyId: env('AWS_ACCESS_KEY_ID'),
+//         secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
+//       },
+//       region: env('AWS_REGION'),
+//       endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`,
+//       forcePathStyle: false,
+//     },
+//     params: {
+//       Bucket: env('AWS_BUCKET'),
+//       ACL: 'public-read',
+//     },
+//   },
+// },
+
 upload: {
   config: {
-    provider: 'aws-s3',
+    provider: '@strapi/provider-upload-aws-s3',
     providerOptions: {
-      s3Options: {
-        credentials: {
-          accessKeyId: env('AWS_ACCESS_KEY_ID'),
-          secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
-        },
-        region: env('AWS_REGION'),
-        endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ ใส่ชื่อ bucket ไว้ที่ subdomain
-        forcePathStyle: false, // ✅ ต้อง false สำหรับ virtual-hosted style
-      },
+      accessKeyId: env('AWS_ACCESS_KEY_ID'),
+      secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
+      region: env('AWS_REGION'),
       params: {
         Bucket: env('AWS_BUCKET'),
-        ACL: 'public-read',
       },
+      endpoint: env('AWS_S3_ENDPOINT'), // ✅ optional, ใช้เฉพาะกรณีต้องการ override
+      forcePathStyle: false, // ✅ ใช้ Virtual Hosted-style
     },
   },
 },
