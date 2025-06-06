@@ -61,15 +61,17 @@ upload: {
           secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
         },
         region: env('AWS_REGION'),
+        endpoint: `https://s3.${env('AWS_REGION')}.amazonaws.com`, // ✅ ตรง region
+        forcePathStyle: false,
       },
       params: {
         Bucket: env('AWS_BUCKET'),
         ACL: 'public-read',
       },
-      baseUrl: `https://${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
     },
   },
 },
+
 
 
   // upload: {
